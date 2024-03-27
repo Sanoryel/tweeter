@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   resources :tweets, except: [:edit, :update]
 
   devise_for :users
-  root to: 'tweet#index'
+  root to: 'tweets#index'
 end
